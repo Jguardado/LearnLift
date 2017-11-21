@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {
-  TouchableOpacity,
   Text,
   View,
 } from 'react-native';
+import LoginForm from './LoginForm';
 
 const ContentPage = () => {
   const { 
@@ -19,9 +19,7 @@ const ContentPage = () => {
       <Text style={textContent}>
           Welcome to LearnLift
       </Text>
-      <TouchableOpacity style={buttonStyle}>
-        <Text style={buttonTextStyle}>Login</Text>
-      </TouchableOpacity>
+      <LoginForm />
     </View>
   );
 };
